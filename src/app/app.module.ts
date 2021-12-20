@@ -7,6 +7,7 @@ import { FeedComponent } from './feed/feed.component';
 import { PublicationComponent } from './publication/publication.component';
 import { CarteClubComponent } from './carte-club/carte-club.component';
 import { RechercheClubComponent } from './recherche-club/recherche-club.component';
+import { SearchbarHeaderComponent } from './searchbar-header/searchbar-header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RechercheClubComponent } from './recherche-club/recherche-club.componen
     FeedComponent,
     PublicationComponent,
     CarteClubComponent,
-    RechercheClubComponent
+    RechercheClubComponent,
+    SearchbarHeaderComponent
   ],
   imports: [
     BrowserModule
