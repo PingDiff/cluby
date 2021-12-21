@@ -8,6 +8,9 @@ import { PublicationComponent } from './publication/publication.component';
 import { CarteClubComponent } from './carte-club/carte-club.component';
 import { RechercheClubComponent } from './recherche-club/recherche-club.component';
 import { SearchbarHeaderComponent } from './searchbar-header/searchbar-header.component';
+import { TimelineComponent } from './timeline/timeline.component';
+import { RechercheComponent } from './recherche/recherche.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { SearchbarHeaderComponent } from './searchbar-header/searchbar-header.co
     PublicationComponent,
     CarteClubComponent,
     RechercheClubComponent,
-    SearchbarHeaderComponent
+    SearchbarHeaderComponent,
+    TimelineComponent,
+    RechercheComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
