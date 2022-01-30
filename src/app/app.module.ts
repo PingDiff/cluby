@@ -11,6 +11,8 @@ import { SearchbarHeaderComponent } from './searchbar-header/searchbar-header.co
 import { TimelineComponent } from './timeline/timeline.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ProfileCardComponent } from './profile-card/profile-card.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AppRoutingModule } from './app-routing.module';
     RechercheClubComponent,
     SearchbarHeaderComponent,
     TimelineComponent,
-    RechercheComponent
+    RechercheComponent,
+    ProfileCardComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
