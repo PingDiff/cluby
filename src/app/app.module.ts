@@ -13,6 +13,8 @@ import { RechercheComponent } from './recherche/recherche.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SidebarExecSpaceComponent } from './sidebar-exec-space/sidebar-exec-space.component';
+import { ExecSpaceComponent } from './exec-space/exec-space.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ProfileComponent } from './profile/profile.component';
     TimelineComponent,
     RechercheComponent,
     ProfileCardComponent,
-    ProfileComponent
+    ProfileComponent,
+    SidebarExecSpaceComponent,
+    ExecSpaceComponent
   ],
   imports: [
     BrowserModule,

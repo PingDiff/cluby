@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TimelineComponent } from './timeline/timeline.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { ProfileComponent } from './profile/profile.component';
-
+import { ExecSpaceComponent } from './exec-space/exec-space.component';
 
 const routes: Routes = [
   { path: '#', component: TimelineComponent },
@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'feed', component: TimelineComponent },
   { path: 'search', component: RechercheComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'myspace', component: ExecSpaceComponent },
 ];
 
 
