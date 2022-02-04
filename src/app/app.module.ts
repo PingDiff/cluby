@@ -30,7 +30,7 @@ import { ExecSpaceComponent } from './exec-space/exec-space.component';
     ProfileCardComponent,
     ProfileComponent,
     SidebarExecSpaceComponent,
-    ExecSpaceComponent
+    ExecSpaceComponent,
   ],
   imports: [
     BrowserModule,

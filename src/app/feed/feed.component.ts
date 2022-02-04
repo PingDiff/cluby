@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Publication } from '../publication';
+import { PublicationService } from '../publication.service';
+
 
 @Component({
   selector: 'app-feed',
@@ -6,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feed.component.scss']
 })
 export class FeedComponent implements OnInit {
+
 
   constructor() { }
 

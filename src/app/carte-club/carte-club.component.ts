@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carte-club.component.scss']
 })
 export class CarteClubComponent implements OnInit {
+  nom_club='UIR 17';
 
   constructor() { }
 

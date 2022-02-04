@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-card.component.scss']
 })
 export class ProfileCardComponent implements OnInit {
+  nom_club='UIR 17';
+  a_propos='Club test affichage UIR 17';
 
   constructor() { }
 
