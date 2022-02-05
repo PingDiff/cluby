@@ -10,6 +10,6 @@ export class ClubServiceService {
   constructor(private http: HttpClient) {
    }
    public getAll(): Observable<Club[]> {
-    return this.http.get<Club[]>(`http://localhost:8080/club/findClubs`);
+    return this.http.get<Club[]>(`http://localhost:8080/api/club/findClubs`);
   }
 }

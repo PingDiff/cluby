@@ -15,6 +15,7 @@ import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SidebarExecSpaceComponent } from './sidebar-exec-space/sidebar-exec-space.component';
 import { ExecSpaceComponent } from './exec-space/exec-space.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ExecSpaceComponent } from './exec-space/exec-space.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

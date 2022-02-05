@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { Club } from '../club';
 import { ClubServiceService } from '../club-service.service';
 
@@ -9,9 +10,17 @@ import { ClubServiceService } from '../club-service.service';
 })
 export class RechercheClubComponent implements OnInit {
 
-  constructor() { }
+  clubList:Club[]=[];
 
-  ngOnInit(): void{
+  constructor(private clubService: ClubServiceService, private sanitizer: DomSanitizer) { }
+
+  ngOnInit(): void {
+    this.clubService.getAll().subscribe(res => {
+      this.clubList = res;
+    })
   }
+  sanitizeImageUrl(imageUrl: string): SafeUrl {
+    return this.sanitizer.bypassSecurityTrustUrl(imageUrl);
+}
 
 }

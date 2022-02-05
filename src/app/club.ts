@@ -1,3 +1,4 @@
+import { SafeResourceUrl } from "@angular/platform-browser";
 import { AdherentsClub } from "./adherents-club";
 import { ClubBudget } from "./club-budget";
 import { ClubSponsor } from "./club-sponsor";
@@ -16,14 +17,14 @@ export class Club {
   logoClub: string;
   banniere: string;
   methRecrut: string;
-  //budgets: Array<ClubBudget>;
-  //sponsors: Array<ClubSponsor>;
-  //reunions: Array<Reunion>;
-  //publications: Array<Publication>;
-  //demandeevts: Array<DemandeEvt>;
-  //demadeadhesions: Array<DemandeAdhesion>;
-  //membreexecutifs: Array<MembreExecutif>;
-  //adherents: Array<AdherentsClub>;
+  budgets: Array<ClubBudget>;
+  sponsors: Array<ClubSponsor>;
+  reunions: Array<Reunion>;
+  publications: Array<Publication>;
+  demandeevts: Array<DemandeEvt>;
+  demadeadhesions: Array<DemandeAdhesion>;
+  membreexecutifs: Array<MembreExecutif>;
+  adherents: Array<AdherentsClub>;
   constructor(id: number, actif: number, banniere: string, logo_club: string, meth_recrutement: string, nom_club: string, selectif: number, budgets: Array<ClubBudget>, sponsors: Array<ClubSponsor>, reunions: Array<Reunion>, publications: Array<Publication>, demandeevts: Array<DemandeEvt>, demadeadhesions: Array<DemandeAdhesion>, membreexecutifs: Array<MembreExecutif>, adherents: Array<AdherentsClub>){
     this.actif=actif;
     this.idClub=id;
@@ -32,13 +33,14 @@ export class Club {
     this.banniere=banniere;
     this.selectif=selectif;
     this.logoClub=logo_club;
-    /*this.budgets=budgets;
+    this.budgets=budgets;
     this.sponsors=sponsors;
     this.reunions=reunions;
     this.publications=publications;
     this.demandeevts=demandeevts;
     this.demadeadhesions=demadeadhesions;
     this.membreexecutifs=membreexecutifs;
-    this.adherents=adherents;*/
+    this.adherents=adherents;
   }
+
 }

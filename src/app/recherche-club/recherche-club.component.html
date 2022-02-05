@@ -1,6 +1,19 @@
 <div class="h-screen flex flex-col overflow-y-scroll">
 
     <div class="grid grid-cols-4">
-      <app-carte-club></app-carte-club>
-  </div>
+      <div *ngFor="let club of  clubList" >
+      <a href="profile">
+        <div class="p-8 bg-gray-50 dark:bg-gray-900 flex flex-col">
+          <div class="px-5 py-4 bg-white dark:bg-gray-800 shadow rounded-lg max-w-lg">
+              <img [src]="sanitizeImageUrl(club.logoClub)"
+                alt=""
+                class="h-full w-full rounded-full">
+
+          </div>
+          <h2 class="mt-4 font-bold text-xl text-center text-uirbleu">{{club.nomClub}}</h2>
+
+        </div>
+      </a>
+    </div>
+    </div>
 </div>
