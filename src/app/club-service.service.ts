@@ -12,4 +12,7 @@ export class ClubServiceService {
    public getAll(): Observable<Club[]> {
     return this.http.get<Club[]>(`http://localhost:8080/api/club/findClubs`);
   }
+  public getClubId(idClub: number): Observable<Club> {
+    return this.http.get<Club>(`http://localhost:8080/api/club/${idClub}`);
+  }
 }

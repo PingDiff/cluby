@@ -9,8 +9,10 @@ export class Publication {
   legende: string;
   upVote: number;
   downVote: number;
-  idClub: number;
-  constructor(id_publication: number, date_pub: Date, down_vote: number, legende: string, media: string, publique: number, tag: string, up_vote: number, id_club: number, factures: Array<Facture>){
+  clubId: number;
+  clubName: string;
+  clubPic: string;
+  constructor(id_publication: number, date_pub: Date, down_vote: number, legende: string, media: string, publique: number, tag: string, up_vote: number, id_club: number, factures: Array<Facture>, clubName: string, clubPic: string){
     this.idPublication=id_publication;
     this.datePub=date_pub;
     this.downVote=down_vote;
@@ -19,6 +21,8 @@ export class Publication {
     this.publique=publique;
     this.tag=tag;
     this.upVote=up_vote;
-    this.idClub=id_club;
+    this.clubId=id_club;
+    this.clubName=clubName;
+    this.clubPic=clubPic;
   }
 }

@@ -5,6 +5,8 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExecSpaceComponent } from './exec-space/exec-space.component';
+import { LoginComponent } from './login/login.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   { path: '#', component: TimelineComponent },
@@ -13,6 +15,9 @@ const routes: Routes = [
   { path: 'search', component: RechercheComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'myspace', component: ExecSpaceComponent },
+  { path: 'profile/:idClub', component: ProfileComponent },
+  { path: 'login', component: LoginComponent},
+  { path: 'test', component: TestComponent},
 ];
 
 
