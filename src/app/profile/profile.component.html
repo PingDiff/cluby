@@ -64,7 +64,7 @@
 
       <div class="flex p-4 items-center">
         <div>
-          <a class="hover:text-uirbleu transition duration-200 ease-linear" href="#">
+          <a class="hover:text-uirbleu transition duration-200 ease-linear" href="/search">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#003567" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
             </svg>
@@ -92,19 +92,19 @@
           <div *ngFor="let publication of club?.publications" class=" p-8 dark:bg-gray-900 flex flex-col">
             <div class="px-5 py-4 bg-blanc  dark:bg-gray-800 shadow rounded-lg ">
               <div class="flex mb-4">
-                <!--photo de profil-->
+                
                 <img class="w-12 h-12 rounded-full" [src]="club?.logoClub" alt="Profile pic"/>
-                <!--Nom et date-->
+                
                 <div class="ml-2 mt-0.5">
                   <span class="block font-medium text-base leading-snug text-uirbleu dark:text-gray-100"></span>{{club?.nomClub}}
                   <span class="block text-sm text-uirjaune dark:text-gray-400 font-light leading-snug">{{publication.datePub | date: 'dd MMMM yyyy'}}</span>
                 </div>
               </div>
-              <!--Text publication-->
+              
               <p class="text-uirbleu dark:text-gray-100 leading-snug md:leading-normal">{{publication.legende}}</p>
               <div class="flex justify-between items-center mt-5">
               <div class="flex ">
-                <!--Bouton like-->
+                
                 <div>
                 <button>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#003567" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
@@ -113,7 +113,7 @@
                 </button>
                 <span class="ml-1 mr-2 text-uirbleu dark:text-gray-400  font-light"> {{publication.upVote}} </span>
                </div>
-               <!--Bouton dislike-->
+               
                <div>
                 <button>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d0d600" class="bi bi-hand-thumbs-down" viewBox="0 0 16 16">
@@ -134,4 +134,3 @@
   </div>
 </div>
 </div>
-

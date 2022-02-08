@@ -11,9 +11,9 @@ export class UtilisateurService {
   constructor(private http: HttpClient) { }
 
   public login(): Observable<Utilisateur>{
-    let header = new HttpHeaders();
-    header.append("Access-Control-Allow-Origin","*");
-    header.append("Access-Control-Allow-Methods","GET, POST");
-    return this.http.get<Utilisateur>('https://localhost:8443/msal4jsample/graph/me', {headers: header});
+
+    return this.http.post<Utilisateur>('http://localhost:8080/msal4jsample/graph/me',{ headers: new HttpHeaders
+    ({'X-Requested-With': 'XMLHttpRequest',
+    "Access-Control-Allow-Origin":"*"}) });
   }
 }

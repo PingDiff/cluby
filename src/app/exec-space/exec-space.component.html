@@ -1,3 +1,62 @@
+<div class="flex flex-row">
 <div class="w-48">
     <app-sidebar-exec-space></app-sidebar-exec-space>
+</div>
+<div  class="flex flex-col justify-center w-4/5 text-uirbleu" >
+<div class="flex flex-row justify-center text-uirbleu text-center">
+    <div class="p-5 bg-white rounded shadow-sm">
+        <div class="text-base text-gray-400 ">Nouveaux membres</div>
+        <div class="flex items-center pt-1">
+            <div class="text-2xl font-bold text-gray-900 ">35</div>
+            <span class="flex items-center px-2 py-0.5 mx-2 text-sm text-green-600 bg-green-100 rounded-full">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </span>
+        </div>
+    </div>
+    <div class="p-5 bg-white rounded shadow-sm">
+        <div class="text-base text-gray-400 ">Visites de la page</div>
+        <div class="flex items-center pt-1">
+            <div class="text-2xl font-bold text-gray-900 ">47</div>
+            <span class="flex items-center px-2 py-0.5 mx-2 text-sm text-green-600 bg-green-100 rounded-full">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </span>
+        </div>
+    </div>
+    <div class="p-5 bg-white rounded shadow-sm">
+        <div class="text-base text-gray-400 ">Interractions</div>
+        <div class="flex items-center pt-1">
+            <div class="text-2xl font-bold text-gray-900 ">65</div>
+            <span class="flex items-center px-2 py-0.5 mx-2 text-sm text-green-600 bg-green-100 rounded-full">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="heading text-center font-bold text-2xl m-5 text-gray-800">Nouvelle publication de club</div>
+<style>
+  body {background:white !important;}
+</style>
+  <div class="editor mx-auto w-10/12 flex flex-col text-gray-800 border border-uirbleu p-4 shadow-lg max-w-2xl">
+    <input class="title bg-gray-100 border border-uirjaune p-2 mb-4 outline-none" spellcheck="false" placeholder="tags" type="text">
+    <textarea class="description bg-gray-100 sec p-3 h-60 border border-uirjaune outline-none" spellcheck="false" placeholder="Contenu"></textarea>
+    
+    <!-- icons -->
+    <div class="icons flex text-gray-500 m-2">
+      <svg class="mr-2 cursor-pointer hover:text-gray-700 border rounded-full p-1 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#d0d600"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+      <svg class="mr-2 cursor-pointer hover:text-gray-700 border rounded-full p-1 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#d0d600"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+      <svg class="mr-2 cursor-pointer hover:text-gray-700 border rounded-full p-1 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#d0d600"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" /></svg>
+      <div class="count ml-auto text-gray-400 text-xs font-semibold">0/300</div>
+    </div>
+    <!-- buttons -->
+    <div class="buttons flex flex-row-reverse">
+      <div class="btn border rounded-lg border-blanc p-1 px-4 font-semibold cursor-pointer text-blanc ml-2 bg-uirbleu">Publier</div>
+    </div>
+  </div>
+</div>
 </div>

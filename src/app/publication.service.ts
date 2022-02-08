@@ -13,6 +13,6 @@ export class PublicationService {
     let header = new HttpHeaders();
     header.append("Access-Control-Allow-Origin","*");
     header.append("Access-Control-Allow-Methods","GET, POST");
-    return this.http.get<Publication[]>('https://localhost:8443/post/publicPosts', {headers: header});
+    return this.http.get<Publication[]>('http://localhost:8080/post/publicPosts', {headers: header});
   }
 }

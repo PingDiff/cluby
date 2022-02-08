@@ -1,9 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Publication } from '../publication';
 import { PublicationService } from '../publication.service';
-import { Utilisateur } from '../utilisateur';
-import { UtilisateurService } from '../utilisateur.service';
+import { HttpClient } from '@angular/common/http';
 
+const GRAPH_ENDPOINT = 'https://graph.microsoft.com/v1.0/me';
+
+type ProfileType = {
+  givenName?: string,
+  surname?: string,
+  userPrincipalName?: string,
+  id?: string
+};
 
 @Component({
   selector: 'app-feed',
@@ -12,19 +19,25 @@ import { UtilisateurService } from '../utilisateur.service';
 })
 export class FeedComponent implements OnInit {
   publicationList: Publication[]=[];
-  user: Utilisateur | undefined;
+  profile!: ProfileType;
 
+  constructor(
+    private http: HttpClient,
+    private publicationService: PublicationService
+  ) { }
 
-  constructor(private publicationService: PublicationService, private userService: UtilisateurService) { }
-
-  ngOnInit(): void {
+  ngOnInit() {
     this.publicationService.getAll().subscribe(res => {
       this.publicationList=res;
     })
-    this.userService.login().subscribe(res => {
-      console.log(res);
-      this.user=res;
-    })
+    this.getProfile();
+  }
+
+  getProfile() {
+    this.http.get(GRAPH_ENDPOINT)
+      .subscribe(profile => {
+        this.profile = profile;
+      });
   }
 
 }
